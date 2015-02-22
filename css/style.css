@@ -1,0 +1,480 @@
+/***** RESET *****/
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var{
+
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top; }
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+table, table td { 
+    padding:0;
+    border:none;
+    border-collapse:collapse;
+}
+img {
+    vertical-align:top; 
+}
+embed { 
+    vertical-align:top;
+}
+* { border:none}
+input, textarea{ outline:none !important}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+/***** LAYOUT *****/
+
+.colSobre,.colSobre2,.colContato1,.colContato2,.colServ1,.colServ2 {
+    float:left; 
+    overflow:hidden;
+}
+.colSobre {
+    text-align:justify;
+    width:100%;
+    text-indent: 25px;
+}
+.colServ1 {
+    width:45%;
+}
+
+.colServ2 {
+    width:45%;
+}
+
+.colContato1 {
+    width:48%;
+}
+.colContato2 {
+    width:42%;
+}
+.divisao {
+    margin-right:10%;
+}
+.divisao2 {
+    margin-right:5%;
+}
+
+
+/***** GERAL *****/
+body, html {
+    height:100%
+}
+body {
+    overflow:hidden;
+    background-color:#fff;
+    border:0;
+    min-height:950px;
+    min-width:950px;
+}
+.tudo {
+    overflow:hidden;
+    height:100%;
+    min-height:920px;
+}
+.main {
+    position:relative;
+    margin:0 auto;
+    width:980px;
+    height:650px;
+} /* inclui os itens do menu */
+.carregador {
+    position:absolute;
+    background:url(../imagens/loading.gif) 50% 50% no-repeat #fff;
+    z-index:99;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0
+}
+a {
+    text-decoration:none;
+    outline:none;
+    color: #001040;
+}
+p {
+    font:12px 'Georgia', sans-serif;
+    color:#606060;
+    line-height:20px;
+}
+.esp {
+    float: right;
+}
+.espl {
+    float: left;
+}
+h1 {
+    padding:0 0 0 0; 
+    float:left;
+}
+h2 {
+    font:41px 'Droid Sans', sans-serif; 
+    color:#313131; 
+    text-transform:uppercase; 
+    text-shadow:1px 1px 0px #fff;
+}
+h2 .serv {
+    font:25px 'Droid Sans', sans-serif; 
+    color:#313131; 
+    text-transform:uppercase; 
+    text-shadow:1px 1px 0px #fff;
+}
+h3 {
+    font:13px 'Droid Sans', sans-serif; 
+    color:#5e5e5e; 
+    text-transform:uppercase; 
+    padding-bottom:35px; 
+    text-shadow:1px 1px 0px #fff;
+}
+.fleft {
+    float:left;
+}
+.limitador {
+    width:100%; 
+    overflow:hidden; 
+    position:relative;
+}
+.centro{
+    text-align: center;
+}
+
+.clear {
+    clear:both;
+}
+header {
+    position:absolute; 
+    height:141px; 
+    z-index:11;
+}
+#logo {
+    display:block; 
+    position:relative;
+    top:306px;
+    background:url(../imagens/logo.png) no-repeat;
+    width:323px;
+    height:92px;
+    padding-right:155px;
+    z-index:10;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+#fundo {
+    overflow:hidden;
+}
+
+.Cerro {
+    font-size: 10px;
+    color: red;
+}
+
+.Cok {
+    font-size: 10px;
+    color: green;
+}
+/*****menu*****/
+.menu {
+    position:relative;
+    float:left;
+    z-index:-1;
+    top:306px;
+    height:49px;
+    margin-top:27px;
+    z-index:10;
+    display:inline-block;
+}
+#menu {
+    float:left; 
+    padding:7px 0 0 0;
+}
+#menu > li {
+    position:relative;
+    float:left;
+    text-align:center;
+    display:inline-block;
+}
+#menu > li > a {
+    position:relative;
+    font:13px 'Droid Sans', sans-serif;
+    line-height:25px;
+    color:#302f2f;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:7px 13px 0 12px;
+    z-index:3;
+    text-shadow:0px 1px 1px #fff;
+}
+#menu > li > a:hover {
+    text-decoration:none;
+    text-shadow:0px 1px 1px #001040;
+}
+#menu > li.active > a {
+    text-decoration:none;
+    text-shadow:0px 1px 1px #001040;
+}
+.botoes {
+    background:url(../imagens/nav-sprite.png);
+}
+.mBotoes {
+    position:relative;
+}
+
+.aviso {
+    position:absolute;
+    top: 190px;
+    left: 43%;
+    background:url(../imagens/borda.png) repeat;
+    padding:12px;
+    border-radius:18px;
+    box-shadow: #737373 0px 0px 0px;
+}
+
+.idioma {
+    position:absolute;
+    z-index:9;
+    top:410px;
+    left:140px;
+    margin-top: 11px;
+}
+
+.borda_idioma_sel {
+    position:absolute;
+    background:url(../imagens/borda3.png) repeat;
+    padding:2px;
+    border-radius:18px;
+    box-shadow: #737373 0px 0px 0px;
+}
+
+.borda_idioma_nsel {
+    position:absolute;
+    padding:2px;
+    border-radius:18px;
+    box-shadow: #737373 0px 0px 0px;
+}
+
+#absoluto {
+    position:absolute;
+}
+#barra_idioma {
+    margin-left: 35px;
+}
+
+.social {
+    position:absolute;
+    z-index:9;
+    top:414px;
+    margin-top: 11px;
+}
+
+.social strong {
+    margin-right: 10px;
+}
+
+
+#socialPT {
+    right: 10px;
+}
+
+#socialEN {
+    right: 55px;
+}
+
+.botao1{
+    padding-bottom: 4px;
+}
+/*****Conteudo*****/
+#conteudo {
+    position:absolute;
+}
+#conteudo > ul {
+    width:950px;
+    margin-top:250px;
+}
+#conteudo > ul > li {
+    position:absolute;
+    margin-left:50px;
+    width:850px;
+    height:400px;
+}
+.borda_conteudo {
+    position: absolute;
+    background:url(../imagens/borda.png) repeat;
+    padding:15px;
+    border-radius:18px;
+    box-shadow: #737373 0px 0px 3px;
+}
+.fundo_conteudo {
+    margin:2px 2px 2px 2px;
+    padding:58px 70px 45px 70px;
+    overflow:hidden;
+    background:url(../imagens/fundo_conteudo.png) repeat;
+    width:705px;
+    height:295px;
+    border-radius:18px;
+    box-shadow: #737373 0px 0px 3px;
+}
+.fundoMenu {
+    position:absolute; 
+    width:2500px; 
+    height:127px; 
+    background:url(../imagens/fundo_menu.png) repeat-x; 
+    top:294px; 
+    margin-left:-716px; 
+    z-index:10;
+}
+.bordaMenu {
+    position:absolute;
+    width:2500px;
+    height:161px;
+    background-color:#fff;
+    top:290px;
+    margin-left:-716px;
+    box-shadow: #404040 0px 0px 3px;
+}
+.imagem {
+    float:left;
+    margin-right:15px;
+    margin-bottom:25px;
+}
+.imagemC {
+    text-align: center;
+    margin-bottom:25px;
+}
+.icones {
+    float: left;
+
+    margin-bottom:5px;
+}
+
+.icones_titulo {
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+
+.icones_margem {
+    padding-top: 10px;
+}
+
+.icones_desc {
+    margin-bottom: 10px;
+}
+
+.padbot {
+    margin-bottom: 10px;
+}
+
+.explicacao {
+    font:12px 'Droid Sans', sans-serif; color:#606060;
+    padding-bottom:3px;
+    text-transform:uppercase;
+}
+
+/*-----Formulario-----*/
+#formulario {
+    padding:0 0 0 0;
+}
+#formulario label {
+    position:relative;
+    display:inline-block;
+    padding-bottom:5px;
+}
+#formulario .input {
+    width:195px;
+    background:#fff;
+    border:1px solid #b3b3b3;
+    padding:10px 8px 10px 15px;
+    color:#484c51;
+    outline:none;
+    margin:0 0 0 0;
+    font-size:12px;
+    font-family:'Georgia';
+}
+#formulario textarea {
+    overflow:auto;
+    margin:0;
+    width:270px;
+    height:52px;
+    background:#fff;
+    border:1px solid #b3b3b3;
+    padding:5px 8px 5px 15px;
+    color:#484c51;
+    resize:none;
+    outline:none;
+    font-size:12px;
+    font-family:'Georgia';
+}
+#formulario .enviar {
+    float: right;
+    font-size:17px;
+    font-family:'Droid Sans', sans-serif;
+    color:#313131;
+    text-decoration:none;
+    text-transform: uppercase;
+    text-shadow:1px 1px 0px #fff;
+}
+/*-----Footer-----*/
+footer { 
+    position: fixed;
+    opacity: 0.64;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: #404040 0px 0px 3px;
+}
+footer p {
+    font:13px 'Droid Sans', sans-serif;
+    text-align: center;
+    color: black;
+    padding-top:8px;
+}
+/*-----Mapa-----*/
+.google_map {
+    margin:0;
+    width:330px;
+    height:190px;
+    background:url(../imagens/content-pad.png) repeat;
+    padding:4px;
+    border-radius:5px;
+    box-shadow: #c1c1c1 0px 0px 3px;
+}
+
+#___plusone_0 {
+    font-size: 12px !important;
+    line-height: 21px !important;
+    vertical-align: top !important;
+    margin-left: -35px !important;
+}
